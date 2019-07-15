@@ -1,0 +1,47 @@
+:head
+.meta[charset utf-8]
+.meta[name viewport][content width=device-width, initial-scale=1.0]
+.title Perl 6 Myths, Revisited
+.link[rel icon][type image/png][href glider.png]
+.link[rel stylesheet][href format.css]
+
+# Perl 6 Myths, Revisited
+
+:div
+@[back to index][.]
+
+## Perl 6 will never be finished
+
+Perl 6 has had two proper language releases, v6.c in Dec 2015 and v6.d in Nov 2018, with accompanying compiler releases.
+
+The language is not 'finished' insofar that parts of the original design have yet to be realized (eg macros), and as any language that isn't dead, it continues to evolve to meet developers' needs. 
+
+
+## Perl 6 has a bizarre ecosystem
+
+The Perl 6 language is specified by its test suite and implemented by the Rakudo compiler targetting the MoarVM virtual machine. The package manager for the ecosystem is known as zef and can install modules from CPAN (the Comprehensive Perl Archive Network) and github.
+
+Rakudo can target other runtimes (eg the Java VM), but MoarVM is recommended. It is implemented using a low-level variant of the language known as NQP (Not Quite Perl 6). There are distributions that bundle the compiler and some modules, in particular Rakudo Star. You probably don't need to know all this.
+
+
+## Perl 6 has no target demographic and no niche
+
+Largely true: Perl 6 has yet to find its niche. Arguably, development has followed the Haskell motto of "avoid 'success at all costs'", though some would say it's rather been "avoid success, at all costs". Some interesting language features are built-in grammars, grapheme-based Unicode strings, concurrency and parallelism. Sadly, the strengths and weaknesses of Perl 6 as it exists today make it unsuitable as a drop-in replacement for Perl 5.
+
+
+## Perl 6 is inconsistent
+
+All languages favouring pragmatism suffer from this to some degree. Perl 6 embraces its nature as a multi-paradigm language, and There's More Than One Way To Do It by design. If you have philosophical disagreements with this approach, that's ok - there are plenty of languages to choose from that might be more to your taste.
+
+
+## Perl 6 is too complicated, hard to learn and hard to read
+
+That has not been the author's experience. It might take a while to familiarize yourself with all parts of the language, but it's entirely possible to become productive quickly and gradually build up your understanding.
+
+
+## Perl 6 is slow
+
+Things have gotten better, but performance is unevenly distributed - from acceptable in the sense of matching other scripting languages, to abysmally slow. Sadly, the grammar engine - a potential selling point of the language - is still on the slow side. However, depending on the problem, you might get some mileage out of parallelization: No such thing as a Global Interpreter Lock in MoarVM.
+
+:div[class center]
+@[back to index][.]

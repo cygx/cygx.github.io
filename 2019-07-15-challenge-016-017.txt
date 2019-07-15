@@ -1,0 +1,74 @@
+:head
+.meta[charset utf-8]
+.meta[name viewport][content width=device-width, initial-scale=1.0]
+.title Perl Weekly Challenge 016 and 017
+.link[rel icon][type image/png][href glider.png]
+.link[rel stylesheet][href format.css]
+.script[src hilite.js][type text/javascript]
+
+# Perl Weekly Challenge 016 and 017
+
+:div
+@[back to index][.]
+
+I decided to take a shot at some tasks from the @[Perl Weekly Challenge][https://perlweeklychallenge.org/].
+
+## Challenge 016, Task #1
+
+### The Pythagoras Pie Puzzle
+
+At a party a pie is to be shared by 100 guest. The first guest gets 1% of the pie, the second guest gets 2% of the remaining pie, the third gets 3% of the remaining pie, the fourth gets 4% and so on.
+
+### My Code
+
+``
+    sub eat {
+        state $cake = 100;
+        given $cake * $^share/100 {
+            $cake -= $_;
+            $_;
+        }
+    }
+    
+    .put for (1..100).map(&eat).pairs.sort(-*.value)[^5];
+``
+
+### Script Output
+
+<pre>
+    9       6.281565095552947
+    10      6.21874944459741773
+    8       6.21253690768973
+    11      6.037840369845492849
+    7       6.002451118541
+</pre>
+
+The 10th guest gets the largest share of the pie at 6.28%.
+
+## Challenge 017, Task #1
+
+### The Ackermann Function
+
+Create a script to demonstrate Ackermann function. The Ackermann function is defined as below, m and n are positive number:
+
+<pre>
+    A(m, n) = n + 1                  if m = 0
+    A(m, n) = A(m - 1, 1)            if m > 0 and n = 0
+    A(m, n) = A(m - 1, A(m, n - 1))  if m > 0 and n > 0
+</pre>
+
+### My Code
+
+``
+    proto A($m, $n) { %.{"$m,$n"} //= {*} }
+    multi A(0, $n) { $n + 1 }
+    multi A($m, 0) { A($m - 1, 1) }
+    multi A($m, $n) { A($m - 1, A($m, $n - 1)) }
+    
+    sub MAIN(UInt $m, UInt $n) { say A($m, $n) }
+``
+
+An anonymous hash is used to cache already computed values within the proto.
+
+:div[class center]
+@[back to index][.]
