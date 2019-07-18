@@ -1,6 +1,10 @@
 PAGES := $(patsubst %.txt,%.html,$(wildcard *.txt))
 ALL := $(PAGES) feed.rss
 
+pages: $(PAGES)
+
+feed: feed.rss
+
 all: $(ALL)
 
 clean:; rm -rf $(ALL)
