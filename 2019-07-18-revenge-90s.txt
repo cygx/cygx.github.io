@@ -1,0 +1,27 @@
+:head
+.meta[charset utf-8]
+.meta[name viewport][content width=device-width, initial-scale=1.0]
+.title Revenge of the '90s
+.link[rel icon][type image/png][href glider.png]
+.link[rel stylesheet][href format.css]
+.script[src hilite.js][type text/javascript]
+
+# Revenge of the '90s
+
+:div
+@[back to index][.]
+
+Found in the @[#perl6 IRC logs][https://colabti.org/irclogger/irclogger_log/perl6?date=2019-07-11#l277]
+
+<pre>
+      <b>&lt;</b><i>tadzik</i><b>&gt;</b>    I wish people stopped using Medium :(
+      <b>&lt;</b><i>timotimo</i><b>&gt;</b>  i'd love it if people brought back webrings with a vengeance
+</pre>
+
+
+Ask, and you shall receive: It's been a while since @[webrings][https://en.wikipedia.org/wiki/Webring] have been a thing. The same has been said of Perl, so what could be more appropriate than a brand new @[Perl 6 Webring][https://6ring.github.io]?
+
+Due to restrictions imposed by the same-origin policy, usability is sadly not quite as good as I'd have liked. It's still been a lot of fun to write, hence I won't be too sad even if people will not flock to it in droves.
+
+:div[class center]
+@[back to index][.]

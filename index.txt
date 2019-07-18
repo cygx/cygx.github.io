@@ -14,5 +14,6 @@ life, the universe and programming woes
 ### 2019-07
 
 :ul[class bare]
+ - -Thu 18- @[Revenge of the '90s][2019-07-18-revenge-90s]
  - -Mon 15- @[Perl Weekly Challenge 016 and 017][2019-07-15-challenge-016-017]
  - -Tue 09- @[Perl 6 Myths, Revisited][2019-07-09-myths]
