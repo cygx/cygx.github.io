@@ -5,6 +5,7 @@
 .link[rel icon][type image/png][href glider.png]
 .link[rel stylesheet][href format.css]
 .script[src hilite.js][type text/javascript]
+.script[src https://6ring.github.io/6ring.js][type text/javascript]
 
 # Perl Weekly Challenge 016 and 017
 

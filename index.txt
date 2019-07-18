@@ -5,6 +5,7 @@
 .link[rel icon][type image/png][href glider.png]
 .link[rel stylesheet][href format.css]
 .link[rel alternate][type application/rss+xml][href feed.rss][title cygx's musings]
+.script[src https://6ring.github.io/6ring.js][type text/javascript]
 
 # cygx's musings
 
