@@ -22,7 +22,7 @@ Found in the @[#perl6 IRC logs][https://colabti.org/irclogger/irclogger_log/perl
 
 Ask, and you shall receive: It's been a while since @[webrings][https://en.wikipedia.org/wiki/Webring] have been a thing. The same has been said of Perl, so what could be more appropriate than a brand new @[Perl 6 Webring][https://6ring.github.io]?
 
-Due to restrictions imposed by the same-origin policy, usability is sadly not quite as good as I'd have liked. It's still been a lot of fun to write, hence I won't be too sad even if people will not flock to it in droves.
+Due to restrictions imposed by the same-origin policy, usability is sadly not quite as good as I'd have liked. It's still been a lot of fun to write, so I probably won't be too sad even if the unthinkable happens and people will not flock to it in droves.
 
 :div[class center]
 @[back to index][.]
