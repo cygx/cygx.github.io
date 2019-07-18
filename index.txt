@@ -9,7 +9,7 @@
 # cygx's musings
 
 :div[class small]
-life, the universe and programming woes
+life, the universe and programming woes · part of the @[perl 6 webring][https://6ring.github.io/?cygx]
 
 ### 2019-07
 
