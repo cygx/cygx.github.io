@@ -1,7 +1,7 @@
 use strict;
 use warnings;
 
-my $rx_attribute = '(?:\\[\\w+(?: [^\\]]*)?\\])';
+my $rx_attribute = '(?:\\[\\w+(?:-\\w+)*(?: [^\\]]*)?\\])';
 my $rx_tag = '(?:<\\/?\w[^>]*(?<!\\s)>)';
 
 my %tags = (
@@ -75,7 +75,7 @@ sub parse_attributes {
     s/"/&quot;/;
 
     my $attrs = '';
-    while (s/\[(\w+)(?: ([^\]]*))?\]//) {
+    while (s/\[(\w+(?:-\w+)*)(?: ([^\]]*))?\]//) {
         $attrs .= " $1";
         $attrs .= "=\"$2\"" if $2;
     }

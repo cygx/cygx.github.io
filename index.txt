@@ -12,8 +12,7 @@
 :div[class small]
 life, the universe and programming woes
 
-:div[class small][style margin-left: 1rem]
-go to the @[next site][https://6ring.github.io/next?cygx] / @[previous site][https://6ring.github.io/prev?cygx] in the @[perl 6 webring][https://6ring.github.io/?cygx]
+.script[type text/javascript][src https://6ring.github.io/widget.js][data-sixring-id cygx]
 
 ### 2019-07
 
