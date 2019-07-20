@@ -4,7 +4,7 @@
 .title Perl 6 Myths, Revisited
 .link[rel icon][type image/png][href glider.png]
 .link[rel stylesheet][href format.css]
-.script[src https://6ring.github.io/6ring.js][type text/javascript]
+.script[src https://6ring.github.io/6ring.js][type text/javascript][data-sixring-id cygx]
 
 # Perl 6 Myths, Revisited
 
