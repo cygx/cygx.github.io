@@ -1,7 +1,8 @@
 use v5.12;
 use warnings;
 
-my @posts = sort { (stat $b)[9] <=> (stat $a)[9] } glob '2019-*.txt';
+my @posts = sort { $b cmp $a || (stat $b)[9] <=> (stat $a)[9] } glob '2019-*.txt';
+
 my $items = join "\n", map {
     my $name = $_;
     $name =~ s/\.txt$//;
