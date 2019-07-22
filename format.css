@@ -1,21 +1,20 @@
 html {
-    background: url('dino.png') fixed no-repeat bottom left;
+    background: url('dino.png') fixed no-repeat bottom left, linear-gradient(to right, rgb(255,255,255) 50%, rgb(245,245,255) 50%);
     height: 100%;
-    padding-left: 1em;
-    padding-right: 1em;
     overflow: auto scroll;
 }
 
 body {
+    background: linear-gradient(to right, rgba(255,255,255,0.9), rgba(245,245,255,1));
+    min-height: calc(100% - 3em);
     font-family: sans-serif;
-    margin: 1em auto;
+    margin: auto;
     max-width: 45em;
     padding: 1em;
     padding-bottom: 2em;
-    background: rgba(250,250,255,0.95);
 }
 
-h1 { font-size: 2em; }
+h1 { font-size: 2.5em; font-family: monospace; }
 h2 { font-size: 1.5em; }
 h3 { font-size: 1.2em; }
 
@@ -57,7 +56,7 @@ ul.bare em {
     font-family: monospace;
 }
 
-a { text-decoration: none }
+a { text-decoration: none; color: #f00 }
 a:before { content: '\21BA\A0' }
 
 code .var { font-style: italic }
