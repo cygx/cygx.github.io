@@ -9,7 +9,7 @@
 
 # Perl Weekly Challenge 018
 
-:div
+:div[class bottom-space]
 @[back to index][.]
 
 A solution to the first task of the @[18th Perl Weekly Challenge][https://perlweeklychallenge.org/blog/perl-weekly-challenge-018/].
@@ -18,7 +18,7 @@ A solution to the first task of the @[18th Perl Weekly Challenge][https://perlwe
 
 ### The Longest Common Substring Problem
 
-Write a script that takes 2 or more strings as command line parameters and print the longest common substring. For example, the longest common substring of the strings *“ABABC”*, *“BABCA”* and *“ABCBA”* is string *“ABC”* of length 3. Other common substrings are *“A”*, *“AB”*, *“B”*, *“BA”*, *“BC”* and *“C”*. Please check this @[wiki page][https://en.wikipedia.org/wiki/Longest_common_substring_problem] for details.
+Write a script that takes 2 or more strings as command line parameters and print the longest common substring. For example, the longest common substring of the strings -“ABABC”-, -“BABCA”- and -“ABCBA”- is string -“ABC”- of length 3. Other common substrings are -“A”-, -“AB”-, -“B”-, -“BA”-, -“BC”- and -“C”-. Please check this @[wiki page][https://en.wikipedia.org/wiki/Longest_common_substring_problem] for details.
 
 ### My Code
 
@@ -40,5 +40,5 @@ Write a script that takes 2 or more strings as command line parameters and print
     }
 ``
 
-:div[class center]
+:div[class center top-space]
 @[back to index][.]
