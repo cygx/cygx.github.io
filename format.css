@@ -56,7 +56,8 @@ ul.bare em {
     font-family: monospace;
 }
 
-a { text-decoration: none; color: darkblue }
+a { text-decoration: none; color: blue }
+a:visited { color: darkblue }
 a:before { content: '\21BA\A0' }
 
 code .var { font-style: italic }
