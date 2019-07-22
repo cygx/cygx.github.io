@@ -10,7 +10,7 @@ function hilite(code) {
                .replace(/'(\\.|[^'])*'/g, LIT)
                .replace(/(?:[\$\%\@]|\&amp;)\^?\w+(-\w+)*/g, VAR)
                .replace(/\b\d+/g, LIT)
-               .replace(/(^|\n)\s*(sub|proto|multi|my|state|given|for|gather|if|last)\b/g, KEY)
+               .replace(/(^|\n)\s*(sub|proto|multi|my|state|given|for|gather|if|last|take)\b/g, KEY)
                .replace(/\s+for|if|where\s+/g, KEY);
 }
 
