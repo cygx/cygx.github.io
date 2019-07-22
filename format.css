@@ -1,11 +1,10 @@
 html {
-    background: url('dino.png') fixed no-repeat bottom left, linear-gradient(to right, rgb(255,255,255) 50%, rgb(230,230,255) 50%);
+    background: url('dino.png') fixed no-repeat bottom left, linear-gradient(to right, rgb(255,255,255) 268px, rgb(220,220,255));
     height: 100%;
     overflow: auto scroll;
 }
 
 body {
-    background: linear-gradient(to right, rgba(255,255,255,0.9), rgba(230,230,255,1));
     min-height: calc(100% - 3em);
     font-family: sans-serif;
     margin: auto;
@@ -21,29 +20,51 @@ h3 { font-size: 1.2em; }
 .small { font-size: 0.85em }
 .center { text-align: center }
 
-h1, h2, h3 { margin: 0 }
-h2, h3 { margin-top: 1.5em }
+center {
+    padding: 0;
+    margin: 1em 0;
+}
+
+h1, h2, h3 { margin: 0; padding: 0; }
+h3 { padding-top: 1rem; padding-bottom: 0.5rem; }
 
 h1:before {
     content: '\266F\A0';
 }
 
 h2 {
+    padding-left: 0.5rem;
     border-bottom: 1px solid silver;
 }
 
+p + h2 { margin-top: 2rem; }
+p + h3, pre + h3 { margin-top: 1rem; }
+div + p, div + h2 { margin-top: 1rem; }
+p + div, pre + div { margin-top: 1rem; }
+
 pre {
-    margin-left: 2em;
     overflow: auto;
+    background: #fafafa;
+    padding: 1rem;
+    margin: 1px 0;
 }
 
 p {
-    margin-left: 1em;
     line-height: 1.5em;
 }
 
 ul {
     list-style-type: square;
+}
+
+h2, h3, p, ul {
+    margin: 0;
+}
+
+h3, p, ul {
+    margin: 0;
+    background: rgba(255,255,255,0.8);
+    padding: 0.5rem;
 }
 
 ul.bare {
@@ -63,3 +84,6 @@ a:before { content: '\21BA\A0' }
 code .var { font-style: italic }
 code .lit { color: blue }
 code .key { color: teal }
+
+.top-space { margin-top: 2rem }
+.bottom-space { margin-bottom: 2rem }
