@@ -1,11 +1,11 @@
 html {
-    background: url('dino.png') fixed no-repeat bottom left, linear-gradient(to right, rgb(255,255,255) 50%, rgb(245,245,255) 50%);
+    background: url('dino.png') fixed no-repeat bottom left, linear-gradient(to right, rgb(255,255,255) 50%, rgb(230,230,255) 50%);
     height: 100%;
     overflow: auto scroll;
 }
 
 body {
-    background: linear-gradient(to right, rgba(255,255,255,0.9), rgba(245,245,255,1));
+    background: linear-gradient(to right, rgba(255,255,255,0.9), rgba(230,230,255,1));
     min-height: calc(100% - 3em);
     font-family: sans-serif;
     margin: auto;
