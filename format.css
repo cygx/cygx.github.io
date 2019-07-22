@@ -34,6 +34,7 @@ h2 {
 
 pre {
     margin-left: 2em;
+    overflow: auto;
 }
 
 p {
