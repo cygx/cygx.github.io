@@ -12,7 +12,7 @@
 :div[class small]
 life, the universe and programming woes
 
-### 2019-07
+## 2019-07
 
 :ul[class bare]
  - -Mon 22- @[Perl Weekly Challenge 018][2019-07-22-challenge-018]
@@ -20,5 +20,5 @@ life, the universe and programming woes
  - -Mon 15- @[Perl Weekly Challenge 016 and 017][2019-07-15-challenge-016-017]
  - -Tue 09- @[Perl 6 Myths, Revisited][2019-07-09-myths]
 
-:div
+:div[style margin: 1em; text-align: center]
 .script[type text/javascript] document.write(SIXRING_WIDGET)
