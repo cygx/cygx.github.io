@@ -6,7 +6,13 @@
   <link>https://cygx.github.io/</link>
   <atom:link href="https://cygx.github.io/feed.rss" rel="self" type="application/rss+xml" />
   <description>life, the universe and programming woes</description>
-  <lastBuildDate>Thu, 18 Jul 2019 06:59:14 GMT</lastBuildDate>
+  <lastBuildDate>Mon, 22 Jul 2019 17:33:50 GMT</lastBuildDate>
+
+  <item>
+   <title>Perl Weekly Challenge 018</title>
+   <link>https://cygx.github.io/2019-07-22-challenge-018</link>
+   <guid isPermaLink="false">x-cygx:2019-07-22-challenge-018</guid>
+  </item>
 
   <item>
    <title>Revenge of the '90s</title>

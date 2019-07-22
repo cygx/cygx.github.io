@@ -8,10 +8,10 @@ function hilite(code) {
                .replace('>', '&gt;')
                .replace(/"(\\.|[^"])*"/g, LIT)
                .replace(/'(\\.|[^'])*'/g, LIT)
-               .replace(/(?:[\$\%\@]|\&amp;)\^?\w+/g, VAR)
+               .replace(/(?:[\$\%\@]|\&amp;)\^?\w+(-\w+)*/g, VAR)
                .replace(/\b\d+/g, LIT)
-               .replace(/(^|\n)\s*(sub|proto|multi|my|state|given|for)\b/g, KEY)
-               .replace(/\s+for\s+/g, KEY);
+               .replace(/(^|\n)\s*(sub|proto|multi|my|state|given|for|gather|if|last)\b/g, KEY)
+               .replace(/\s+for|if|where\s+/g, KEY);
 }
 
 addEventListener('DOMContentLoaded', function() {

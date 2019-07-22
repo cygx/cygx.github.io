@@ -1,0 +1,44 @@
+:head
+.meta[charset utf-8]
+.meta[name viewport][content width=device-width, initial-scale=1.0]
+.title Perl Weekly Challenge 018
+.link[rel icon][type image/png][href glider.png]
+.link[rel stylesheet][href format.css]
+.script[src https://6ring.github.io/6ring.js][type text/javascript][data-sixring-id cygx]
+.script[src hilite.js][type text/javascript]
+
+# Perl Weekly Challenge 018
+
+:div
+@[back to index][.]
+
+A solution to the first task of the @[18th Perl Weekly Challenge][https://perlweeklychallenge.org/blog/perl-weekly-challenge-018/].
+
+## Challenge 018, Task #1
+
+### The Longest Common Substring Problem
+
+Write a script that takes 2 or more strings as command line parameters and print the longest common substring. For example, the longest common substring of the strings *“ABABC”*, *“BABCA”* and *“ABCBA”* is string *“ABC”* of length 3. Other common substrings are *“A”*, *“AB”*, *“B”*, *“BA”*, *“BC”* and *“C”*. Please check this @[wiki page][https://en.wikipedia.org/wiki/Longest_common_substring_problem] for details.
+
+### My Code
+
+``
+    sub substrings($_, \len) {
+        gather for 0 .. (.chars - len) -> \offset {
+            take .substr(offset, len);
+        }
+    }
+    
+    sub MAIN(*@strings where .so) {
+        for @strings>>.chars.min ... 1 -> \len {
+            my @common-substrings = keys [∩] @strings>>.&substrings(len);
+            if @common-substrings {
+                .perl.put for @common-substrings.sort;
+                last;
+            }
+        }
+    }
+``
+
+:div[class center]
+@[back to index][.]
