@@ -7,7 +7,7 @@
 .script[src https://6ring.github.io/6ring.js][type text/javascript][data-sixring-id cygx]
 
 
-# I don't think it's the&{#x200b}&{nbsp}version&{nbsp}number
+# I don't think it's the version number
 
 :div[class bottom-space]
 @[back to index][.]
