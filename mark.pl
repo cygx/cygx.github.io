@@ -53,7 +53,8 @@ sub postprocess {
 sub parse_formatting {
     local $_ = shift;
 
-    s/&/&amp;/g;
+    s/&(?!\{)/&amp;/g;
+    s/&\{([^\}]+)\}/&$1;/g;
     s/</&lt;/g;
     s/>/&gt;/g;
 
