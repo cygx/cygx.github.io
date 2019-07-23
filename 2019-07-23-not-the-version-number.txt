@@ -1,0 +1,22 @@
+:head
+.meta[charset utf-8]
+.meta[name viewport][content width=device-width, initial-scale=1.0]
+.title I don't think it's the version number
+.link[rel icon][type image/png][href glider.png]
+.link[rel stylesheet][href format.css]
+.script[src https://6ring.github.io/6ring.js][type text/javascript][data-sixring-id cygx]
+
+
+# I don't think it's the&{#x200b}&{nbsp}version&{nbsp}number
+
+:div[class bottom-space]
+@[back to index][.]
+
+I always wonder what the Perl 5 people who are mad at Perl 6 for existing think being able to increase the major version number again would actually do: While I agree that Perl 6 didn't help the situation and might have made it worse when it took too long to arrive - and still cannot be used as a drop-in replacement for Perl 5 - the fact remains that its creation was a -reaction to- and not the -cause of- Perl 5's loss of mindshare.
+
+I would argue that if you want to make Perl relevant again, you have to 'fix' the language first. Take a look at @[Reini Urban's cperl][http://perl11.org/cperl/] for what a more incremental improvement could look like. Only after that's done, worries about the implications of Perl 6's existence for marketing purposes become legitimate. That situation is indeed not ideal, but I suspect there are ways it could be made to work (personally, I think -perl2k 1.0- has a nice ring to it).
+
+However, unless you also break backwards compatibility entirely to get rid of the biggest warts (e.g. sigil variance), the language might still be seen as outdated or cryptic; and if you do that, you're back again to something that's awfully close to the Perl 6 situation...
+
+:div[class center top-space]
+@[back to index][.]
