@@ -15,6 +15,7 @@ life, the universe and programming woes
 ## 2019-07
 
 :ul[class bare]
+ - -Mon 29- @[Perl Weekly Challenge 019][2019-07-29-challenge-019]
  - -Tue 23- @[I don't think it's the version number][2019-07-23-not-the-version-number]
  - -Mon 22- @[Perl Weekly Challenge 018][2019-07-22-challenge-018]
  - -Thu 18- @[Revenge of the '90s][2019-07-18-revenge-90s]

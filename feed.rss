@@ -6,7 +6,19 @@
   <link>https://cygx.github.io/</link>
   <atom:link href="https://cygx.github.io/feed.rss" rel="self" type="application/rss+xml" />
   <description>life, the universe and programming woes</description>
-  <lastBuildDate>Mon, 22 Jul 2019 17:33:50 GMT</lastBuildDate>
+  <lastBuildDate>Mon, 29 Jul 2019 12:39:16 GMT</lastBuildDate>
+
+  <item>
+   <title>Perl Weekly Challenge 019</title>
+   <link>https://cygx.github.io/2019-07-29-challenge-019</link>
+   <guid isPermaLink="false">x-cygx:2019-07-29-challenge-019</guid>
+  </item>
+
+  <item>
+   <title>I don't think it's the version number</title>
+   <link>https://cygx.github.io/2019-07-23-not-the-version-number</link>
+   <guid isPermaLink="false">x-cygx:2019-07-23-not-the-version-number</guid>
+  </item>
 
   <item>
    <title>Perl Weekly Challenge 018</title>
