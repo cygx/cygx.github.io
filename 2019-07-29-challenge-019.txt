@@ -30,5 +30,22 @@ The most obvious way to do this I could think of, using the handy @[weekday-of-m
         .grep({ .head.day-of-week == 5 && .all ~~ *.weekday-of-month == 5 });
 ``
 
+## Update 2019-07-30
+
+### A Faster Solution
+
+There's of course a less involved way to find these months:
+
+First, realize that in order to have 5 weekends in a month, that month needs to have a length of at least -(four weeks) + (3-day weekend) = (31 days)-. This is also the maximum number of days per month, which implies that any month with 5 weeekends in it has to start on a friday.
+
+In code:
+
+``
+    .say for (Date.new(1900, 1, 1), *.later(:month) ... Date.new(2019, 12, 1))
+        .grep({ .days-in-month == 31 && .day-of-week == 5 });
+``
+
+This will run significantly faster as we only need to iterate through the months in a year instead of all its days as the prior solution did.
+
 :div[class center top-space]
 @[back to index][.]
