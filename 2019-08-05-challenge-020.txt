@@ -1,0 +1,53 @@
+:head
+.meta[charset utf-8]
+.meta[name viewport][content width=device-width, initial-scale=1.0]
+.title Perl Weekly Challenge 020
+.link[rel icon][type image/png][href glider.png]
+.link[rel stylesheet][href format.css]
+.script[src https://6ring.github.io/6ring.js][type text/javascript][data-sixring-id cygx]
+.script[src hilite.js][type text/javascript]
+
+# Perl Weekly Challenge 020
+
+:div[class bottom-space]
+@[back to index][.]
+
+Solutions to the first two tasks of the @[20th Perl Weekly Challenge][https://perlweeklychallenge.org/blog/perl-weekly-challenge-020/].
+
+## Challenge 020, Task #1
+
+### Split on Character Change
+
+Write a script to accept a string from the command line and split it on change of character. For example, if the string is -“ABBCDEEF”-, then it should split like -“A”-, -“BB”-, -“C”-, -“D”-, -“EE”-, -“F”-.
+
+### My Code
+
+``
+    say .comb(/(.)$0*/) for @*ARGS;
+``
+
+## Challenge 020, Task #2
+
+### Amicable Numbers
+
+Write a script to print the smallest pair of -Amicable Numbers-. For more information, please checkout this @[Wikipedia page][https://en.wikipedia.org/wiki/Amicable_numbers].
+
+### My Code
+
+``
+    sub divisors($_) { grep $_ %% *, (1, 2 ...^ * * 2 > $_) }
+    
+    my @amicable-numbers = (1..^Inf).map: -> $a {
+        my $b = $a.&divisors.sum;
+        $a, $b if $a != $b && $b.&divisors.sum == $a;
+    }
+    
+    sub MAIN(UInt $N = 1) {
+        .say for @amicable-numbers[^$N];
+    }
+``
+
+The first pair is `(220 284)`.
+
+:div[class center top-space]
+@[back to index][.]

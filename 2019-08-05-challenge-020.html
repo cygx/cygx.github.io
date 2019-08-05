@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<head><meta charset="utf-8"></meta>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
+<title>Perl Weekly Challenge 020</title>
+<link rel="icon" type="image/png" href="glider.png"></link>
+<link rel="stylesheet" href="format.css"></link>
+<script src="https://6ring.github.io/6ring.js" type="text/javascript" data-sixring-id="cygx"></script>
+<script src="hilite.js" type="text/javascript"></script></head>
+
+<h1>Perl Weekly Challenge 020</h1>
+
+<div class="bottom-space"><a href=".">back to index</a></div>
+
+<p>Solutions to the first two tasks of the <a href="https://perlweeklychallenge.org/blog/perl-weekly-challenge-020/">20th Perl Weekly Challenge</a>.</p>
+
+<h2>Challenge 020, Task #1</h2>
+
+<h3>Split on Character Change</h3>
+
+<p>Write a script to accept a string from the command line and split it on change of character. For example, if the string is <em>“ABBCDEEF”</em>, then it should split like <em>“A”</em>, <em>“BB”</em>, <em>“C”</em>, <em>“D”</em>, <em>“EE”</em>, <em>“F”</em>.</p>
+
+<h3>My Code</h3>
+
+<pre><code>say .comb(/(.)$0*/) for @*ARGS;</code></pre>
+
+<h2>Challenge 020, Task #2</h2>
+
+<h3>Amicable Numbers</h3>
+
+<p>Write a script to print the smallest pair of <em>Amicable Numbers</em>. For more information, please checkout this <a href="https://en.wikipedia.org/wiki/Amicable_numbers">Wikipedia page</a>.</p>
+
+<h3>My Code</h3>
+
+<pre><code>sub divisors($_) { grep $_ %% *, (1, 2 ...^ * * 2 > $_) }
+
+my @amicable-numbers = (1..^Inf).map: -> $a {
+    my $b = $a.&divisors.sum;
+    $a, $b if $a != $b && $b.&divisors.sum == $a;
+}
+
+sub MAIN(UInt $N = 1) {
+    .say for @amicable-numbers[^$N];
+}</code></pre>
+
+<p>The first pair is <code>(220 284)</code>.</p>
+
+<div class="center top-space"><a href=".">back to index</a></div>
+

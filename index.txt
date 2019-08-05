@@ -12,6 +12,11 @@
 :div[class small]
 life, the universe and programming woes
 
+## 2019-08
+
+:ul[class bare]
+ - -Mon 05- @[Perl Weekly Challenge 020][2019-08-05-challenge-020]
+
 ## 2019-07
 
 :ul[class bare]
