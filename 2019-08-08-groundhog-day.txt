@@ -37,11 +37,15 @@ Personally, I also consider the limited Perl 5 interoperability a defect: The Pe
 
 These are technical issue: A new name won't fix them.
 
-## What would you like to see happen?
+## What would you like to see happen to Perl 5?
 
-On the Perl 6 side, better Perl 5 integration such as being able to embed Perl 5 code blocks into Perl 6  - I think getting -something- in place wouldn't be too hard (FROGGS probably could have implemented @[this proposal][https://gist.github.com/cygx/de15015296c904f97285233bd1df526c] in a day or two on top of nine's admirable work on `Inline::Perl5`, which should be in core). I'd also like to see unified tooling (e.g. teaching `zef` and `p6doc` about Perl&{nbsp}5).
+At the very least a standardized object system and signatures enabled by default. In principle, other language issues could be tackled as well.
 
-On the Perl 5 side, at the very least a standardized object system and signatures enabled by default. In principle, other language issues could be tackled as well. I consider concerns about backwards compatibility or being stuck at version number 5 strawmen: Just choose a new naming and versioning scheme that does not conflict with Perl 6 (e.g. -Perl2k 1.0-) and add a new binary (e.g. `perl2k`) that enables all the goodies by default; the `perl` binary would be kept backwards-compatible, requiring appropriate `use` statements to enable new language features.
+I consider concerns about backwards compatibility or being stuck at version number 5 strawmen: Just choose a new naming and versioning scheme that does not conflict with Perl 6 (e.g. -Perl2k&{nbsp}1.0-) and add a new binary (e.g. `perl2k`) that enables all the goodies by default; the `perl` binary would be kept backwards-compatible, requiring appropriate `use` statements to enable new language features.
+
+## What would you like to see happen to Perl 6?
+
+Better Perl 5 integration such as being able to embed Perl 5 code blocks into Perl 6  - I think getting -something- in place wouldn't be too hard (FROGGS probably could have implemented @[this proposal][https://gist.github.com/cygx/de15015296c904f97285233bd1df526c] in a day or two on top of nine's admirable work on `Inline::Perl5`, which should be in core). I'd also like to see unified tooling (e.g. teaching `zef` and `p6doc` about Perl&{nbsp}5).
 
 :div[class center top-space]
 @[back to index][.]
