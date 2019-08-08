@@ -15,6 +15,7 @@ life, the universe and programming woes
 ## 2019-08
 
 :ul[class bare]
+ - -Thu 08- @[It's Groundhog Day Again][2019-08-08-groundhog-day]
  - -Mon 05- @[Perl Weekly Challenge 020][2019-08-05-challenge-020]
 
 ## 2019-07

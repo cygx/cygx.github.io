@@ -1,0 +1,47 @@
+:head
+.meta[charset utf-8]
+.meta[name viewport][content width=device-width, initial-scale=1.0]
+.title It's Groundhog Day Again
+.link[rel icon][type image/png][href glider.png]
+.link[rel stylesheet][href format.css]
+.script[src https://6ring.github.io/6ring.js][type text/javascript][data-sixring-id cygx]
+
+# It's Groundhog Day Again
+
+:div[class bottom-space]
+@[back to index][.]
+
+Another Perl conference, another naming/versioning discussion. Some thoughts on the topic:
+
+## Is Perl 6 still Perl?
+
+I believe so: It looks and feels like Perl to me. Also note that while the Perl 6 situation with respect to its predecessor is rare, it has happened with other programming languages (e.g. Algol-68, Modula-2, even Python 3 to some degree).
+
+## What's wrong with Perl 5?
+
+Lot's of things.
+
+On the language side, we've got sigil variance, its reference semantics, weak typing, no signatures by default and lack of a (usable) object system in core.
+
+On the implementation side, we've got an unsatisfactory parallelism story, lack of JIT compilation and a 'fun' extension API.
+
+These are technical issues: A new version number won't fix them.
+
+## What's wrong with Perl 6?
+
+Performance in general and performance of the regex engine in particular. Things have improved significantly, but it doesn't look good when your killer feature tends to be unusably slow.
+
+The deployment story is unsatisfactory, though I'm hoping pamplemousse's Summer of Code work will help address this eventually.
+
+Personally, I also consider the limited Perl 5 interoperability a defect: The Perl 5 community and ecosystem is a valuable resource instead of something to be eschewed.
+
+These are technical issue: A new name won't fix them.
+
+## What would you like to see happen?
+
+On the Perl 6 side, better Perl 5 integration such as being able to embed Perl 5 code blocks into Perl 6  - I think getting -something- in place wouldn't be too hard (FROGGS probably could have implemented @[this proposal][https://gist.github.com/cygx/de15015296c904f97285233bd1df526c] in a day or two on top of nine's admirable work on `Inline::Perl5`, which should be in core). I'd also like to see unified tooling (e.g. teaching `zef` and `p6doc` about Perl&{nbsp}5).
+
+On the Perl 5 side, at the very least a standardized object system and signatures enabled by default. In principle, other language issues could be tackled as well. I consider concerns about backwards compatibility or being stuck at version number 5 strawmen: Just choose a new naming and versioning scheme that does not conflict with Perl 6 (e.g. -Perl2k 1.0-) and add a new binary (e.g. `perl2k`) that enables all the goodies by default; the `perl` binary would be kept backwards-compatible, requiring appropriate `use` statements to enable new language features.
+
+:div[class center top-space]
+@[back to index][.]
