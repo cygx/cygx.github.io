@@ -1,0 +1,38 @@
+:head
+.meta[charset utf-8]
+.meta[name viewport][content width=device-width, initial-scale=1.0]
+.title On Perl 6 Competitiveness
+.link[rel icon][type image/png][href glider.png]
+.link[rel stylesheet][href format.css]
+.script[src https://6ring.github.io/6ring.js][type text/javascript][data-sixring-id cygx]
+
+# On Perl 6 Competitiveness
+
+:div[class bottom-space]
+@[back to index][.]
+
+Let's take a look at some @[popular programming languages][https://www.tiobe.com/tiobe-index/] and fill our toolbox with a pick of potential competitors, say
+
+:ul
+  - Java
+  - Python
+  - Javascript <small>-(think Node.js, but also TypeScript)-</small>
+  - PHP
+  - Ruby
+  - Go
+  - Perl
+
+Now, name a programming niche in which Perl 6 can compete with these on technical grounds; a job for which it's the superior tool.
+
+For example, you could try to take on Perl as a glue or text wrangling language - but our older sister still eats our breakfast on startup time and regex performance.
+
+Or you could try to compete with PHP and Node.js in the server-side web programming space, but at least as far as single-threaded performance goes, see above.
+
+If you can leverage parallelism, there might be some room for us to compete in, but we need to be sure to provide advantages over the likes of Go and Java not just at the language level, but also the tooling. For example, that whole single static binary thing Go has going is rather nice, so we should make that happen for Perl 6.
+
+Now, it could be argued that Ruby and Python specifically get used in situations where they are not (or no longer) the best tool on purely technical grounds, but they are chosen because people like the language and have built up an ecosystem around the problem domain. This is where generating marketing buzz could help us, but in the end, we still need to actually write stuff solving real-world problems.
+
+Also note that there are tons of already established languages in similar situations that never moved to the top of the popularity ladder, and Perl 6 could be doomed to suffer the same fate if we don't offer a clear technical advantage in some domain.
+
+:div[class center top-space]
+@[back to index][.]
